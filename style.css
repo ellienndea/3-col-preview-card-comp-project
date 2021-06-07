@@ -1,0 +1,108 @@
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-grey: hsl(0, 0%, 95%); /* color: var(--orange); */
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+    background-color: var(--very-light-grey);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.8;
+}
+.card {
+    padding: 2rem 2rem 3rem 2rem;
+    width: 100%;
+    max-width: 25ch;
+}
+img {
+    width: 4rem;
+    height: auto;
+    margin-top: 1rem;
+}
+.sedan {
+    background-color: var(--orange);
+    border-radius: 5px 5px 0 0;
+}
+.suv {
+    background-color: var(--dark-cyan);
+}
+.luxury {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 5px 5px;
+}
+h1 {
+    margin-top: 1rem;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--very-light-grey);
+}
+p {
+    margin-top: 1rem;
+    color: var(--transparent-white);
+}
+button {
+    margin-top: 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.9rem 1.7rem;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--very-light-grey);
+}
+.sedan > button {
+    color: var(--orange);
+}
+.suv > button {
+    color: var(--dark-cyan);
+}
+.luxury > button {
+    color: var(--very-dark-cyan);
+}
+button:active {
+    color: var(--very-light-grey);
+    border: 3px solid var(--very-light-grey)
+}
+.sedan > button:active {
+    background-color: var(--orange);
+}
+.suv > button:active {
+    background-color: var(--dark-cyan);
+}
+.luxury > button:active {
+    background-color: var(--very-dark-cyan);
+}
+    /* media queries  */
+    @media (min-width:1020px){
+    .container-cards {
+        display: flex;
+    }
+    .sedan {
+        border-radius: 5px 0 0 5px;
+    }
+    .luxury {
+        border-radius: 0 5px 5px 0;
+    }
+    }
+    /* end media queries  */
+    
+    .attribution {
+        position:absolute;
+        bottom: 5px;
+        padding:2px;
+        border-radius: 5px;
+        font-size: 11px; 
+        text-align: center;
+    }
+    .attribution a { color: hsl(228, 45%, 44%); }
