@@ -55,6 +55,7 @@ p {
     color: var(--transparent-white);
 }
 .button {
+    display: inline-block;
     margin-top: 1.5rem;
     border: 3px solid transparent;
     border-radius: 2rem;
@@ -62,7 +63,6 @@ p {
     font-family: 'Lexend Deca', sans-serif;
     background-color: var(--very-light-grey);
     text-decoration: none;
-    display: inline-block;
 }
 .sedan > a {
     color: var(--orange);
@@ -73,13 +73,17 @@ p {
 .luxury > a {
     color: var(--very-dark-cyan);
 }
+a:hover {
+    text-decoration: underline;
+}
 a:active {
     color: var(--very-light-grey);
     border: 3px solid var(--very-light-grey);
     text-decoration: none;
     display: inline-block;
+    background-color: transparent; /* instead of outcommented lines below */
 }
-.sedan > a:active {
+/* .sedan > a:active {
     background-color: var(--orange);
 }
 .suv > a:active {
@@ -87,7 +91,8 @@ a:active {
 }
 .luxury > a:active {
     background-color: var(--very-dark-cyan);
-}
+} */
+
     /* media queries  */
     @media (min-width:1020px){
     .container-cards {
