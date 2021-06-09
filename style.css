@@ -6,6 +6,7 @@
     --very-light-grey: hsl(0, 0%, 95%); /* color: var(--orange); */
   }
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -24,7 +25,7 @@ body {
 .card {
     padding: 2rem 2rem 3rem 2rem;
     width: 100%;
-    max-width: 25ch;
+    max-width: 33ch;
 }
 img {
     width: 4rem;
@@ -53,34 +54,38 @@ p {
     margin-top: 1rem;
     color: var(--transparent-white);
 }
-button {
+.button {
     margin-top: 1.5rem;
-    border: none;
+    border: 3px solid transparent;
     border-radius: 2rem;
     padding: 0.9rem 1.7rem;
     font-family: 'Lexend Deca', sans-serif;
     background-color: var(--very-light-grey);
+    text-decoration: none;
+    display: inline-block;
 }
-.sedan > button {
+.sedan > a {
     color: var(--orange);
 }
-.suv > button {
+.suv > a {
     color: var(--dark-cyan);
 }
-.luxury > button {
+.luxury > a {
     color: var(--very-dark-cyan);
 }
-button:active {
+a:active {
     color: var(--very-light-grey);
-    border: 3px solid var(--very-light-grey)
+    border: 3px solid var(--very-light-grey);
+    text-decoration: none;
+    display: inline-block;
 }
-.sedan > button:active {
+.sedan > a:active {
     background-color: var(--orange);
 }
-.suv > button:active {
+.suv > a:active {
     background-color: var(--dark-cyan);
 }
-.luxury > button:active {
+.luxury > a:active {
     background-color: var(--very-dark-cyan);
 }
     /* media queries  */
