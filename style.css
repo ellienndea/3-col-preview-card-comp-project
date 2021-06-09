@@ -92,7 +92,9 @@ a:active {
 .luxury > a:active {
     background-color: var(--very-dark-cyan);
 } */
-
+*:focus-visible {
+    border: 3px solid hsl(184, 100%, 45%);
+}
     /* media queries  */
     @media (min-width:1020px){
     .container-cards {
