@@ -18,7 +18,7 @@ body {
     padding: 2rem;
     min-height: 100vh;
     background-color: var(--very-light-grey);
-    font-size: 15px;
+    font-size: 0.94rem;
     font-family: 'Lexend Deca', sans-serif;
     line-height: 1.8;
 }
